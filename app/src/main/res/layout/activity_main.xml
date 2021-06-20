@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Difficulty level"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="23dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="80dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:background="@color/white"
+        android:layout_marginTop="20dp"
+        >
+
+        <Button
+            android:id="@+id/btn_easy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Easy"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            android:layout_marginLeft="5dp"
+            />
+
+        <Button
+            android:id="@+id/btn_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medium"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            />
+
+        <Button
+            android:id="@+id/btn_hard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hard"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            android:layout_marginRight="5dp"
+            />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>

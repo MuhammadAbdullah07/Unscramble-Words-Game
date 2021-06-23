@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "234796970235",
+    "project_id": "unscramble-words-62775",
+    "storage_bucket": "unscramble-words-62775.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:234796970235:android:a2be3b0e2f15dd1bc6005e",
+        "android_client_info": {
+          "package_name": "com.abdullah.unscramblewords"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "234796970235-44rs20rf8m5e8mbk3i60picvvt4298la.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASiXZeRN1FU0Djt_GwM0LKeI9OBfLbbOI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "234796970235-44rs20rf8m5e8mbk3i60picvvt4298la.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

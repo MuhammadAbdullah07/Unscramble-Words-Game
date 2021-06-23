@@ -76,13 +76,14 @@ public class BlankFragmentmedium extends Fragment {
     Button Check,Next;
     Random Rand;
     String CurrentWord;
-    String[] Dictionary={"One","Two","Ali","Table","Chair","Pen","Pencil","Ask","Class","Get"};
+    String[] Dictionary={"juice","chair","laptop","stick","bubble","shoes","charger",
+            "tower","soccer","glass"};
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
       View view=   inflater.inflate(R.layout.fragment_blank_fragmentmedium, container, false);
-      return view;
+
 
         Information= view.findViewById(R.id.information);
         Word = view.findViewById(R.id.word);
@@ -111,6 +112,6 @@ public class BlankFragmentmedium extends Fragment {
                 NewGame();
             }
         });
-
+        return view;
     }
 }

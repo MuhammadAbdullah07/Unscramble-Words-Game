@@ -25,16 +25,12 @@ public class BlankFragmenteasy extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-
     public BlankFragmenteasy() {
         // Required empty public constructor
     }
-
-
     // TODO: Rename and change types and number of parameters
     public static BlankFragmenteasy newInstance(String param1, String param2) {
         BlankFragmenteasy fragment = new BlankFragmenteasy();
@@ -54,38 +50,20 @@ public class BlankFragmenteasy extends Fragment {
         }
 
     }
-    //shuffling words from dictionary
-    private String shuffleword(String word){
-        List<String> Letters = Arrays.asList(word.split(""));
-        Collections.shuffle(Letters);
-        String Shuffled ="";
-        for(String letter : Letters){
-            Shuffled += letter;
-        }
-        return Shuffled;
-    }
-    private void NewGame(){
-        //getting random word from dictionary
-        CurrentWord = Dictionary[(Rand.nextInt(Dictionary.length))];
-        //showing shuffled word
-        Word.setText(shuffleword(CurrentWord));
-        //to clear text
-        Answer.setText("");
-        Next.setEnabled(false);
-        Check.setEnabled(true);
-    }
+
     TextView Information,Word;
     EditText Answer;
     Button Check,Next;
     Random Rand;
     String CurrentWord;
-    String[] Dictionary={"One","Two","Ali","Table","Chair","Pen","Pencil","Ask","Class","Get"};
+    String[] Dictionary={"one","two","ali","table","chair","pen","pencil","ask","class","get","cap",
+            "car","apple","banana","red","blue"
+    };
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_blank_fragmenteasy, container, false);
-        return view;
 
         Information= view.findViewById(R.id.information);
         Word = view.findViewById(R.id.word);
@@ -114,6 +92,27 @@ public class BlankFragmenteasy extends Fragment {
                 NewGame();
             }
         });
+        return view;
 
+    }
+    //shuffling words from dictionary
+    private String shuffleword(String word){
+        List<String> Letters = Arrays.asList(word.split(""));
+        Collections.shuffle(Letters);
+        String Shuffled ="";
+        for(String letter : Letters){
+            Shuffled += letter;
+        }
+        return Shuffled;
+    }
+    private void NewGame(){
+        //getting random word from dictionary
+        CurrentWord = Dictionary[(Rand.nextInt(Dictionary.length))];
+        //showing shuffled word
+        Word.setText(shuffleword(CurrentWord));
+        //to clear text
+        Answer.setText("");
+        Next.setEnabled(false);
+        Check.setEnabled(true);
     }
 }
